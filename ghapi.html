@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>GitHub API practice</title>
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="ghapi.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Search for GitHub repos by username</h1>
+
+      <form>
+        <label for="userName">Enter a GitHub username</label>
+        <input id="whatName" type="text" value="literalmantis" required />
+        <input class="getName" type="submit" value="Find me this user!" />
+      </form>
+      <section id="results" class="hidden">
+        <h2>Search results</h2>
+        <ul id="results-list"></ul>
+      </section>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script src="ghapi.js"></script>
+  </body>
+</html>
